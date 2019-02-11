@@ -1,18 +1,22 @@
 class ArraySwapper {
   
-  public int[] arraySwap(int []inputArray) {
+  public int[] arraySwap(int[] inputArray){
     
     // Swap the two items in "inputArray" and return the output
     int[] outputArray = new int[2];
-
-    // put your code here
     
-    return outputArray;
+    // put your code here
+    int temp = 0,otherTemp = 0;
+      inputArray[0] = temp;
+      inputArray[1] = otherTemp;
+      inputArray[1] = temp;
+      inputArray[0] = otherTemp;
+      return inputArray;
     
   }
   
   public static void main(String[] args) {
-
+    
     ArraySwapper testSwapper = new ArraySwapper();
     
     int[] exampleInput = {1,2};
